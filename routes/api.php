@@ -19,6 +19,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\EmployeeTrackerController;
 use App\Http\Controllers\EmployeeTransactionController;
 use App\Http\Controllers\EmployeeDetailsController;
+use App\Http\Controllers\CommonController;
 
 
 
@@ -50,6 +51,7 @@ Route::post('/newPassword',         [MailController::class, 'resetPassword']);
 |--------------------------------------------------------------------------
 */
 Route::middleware(['auth:sanctum'])->group(function () {
+    Route::post('/employeeCredit', [CommonController::class, 'employeeCredit']);
 
     /* ---------- AuthController ---------- */
     Route::post('/changePassword', [AuthController::class, 'changePassword']);
