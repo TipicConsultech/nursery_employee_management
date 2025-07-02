@@ -64,6 +64,12 @@ export default function fetchNavItems(t1) {
           { component: CNavItem, name: t('LABELS.all_Users'),   to: 'usermanagement/all-users', className: 'ms-4' },
           { component: CNavItem, name: t('LABELS.create_user'), to: 'usermanagement/create-user', className: 'ms-4' },
         ],
+      },
+    {
+        component: CNavItem,
+        name: t("LABELS.credit_screen"),
+        to: '/credit_screen',
+        icon: <CIcon icon={cilFile} customClassName="nav-icon" />,
       }
     ]
   }
@@ -80,6 +86,12 @@ export default function fetchNavItems(t1) {
           { component: CNavItem, name: t('LABELS.create_user'), to: 'usermanagement/create-user', className: 'ms-4' },
         ],
       },
+{
+        component: CNavItem,
+        name: t("LABELS.credit_screen"),
+        to: '/credit_screen',
+        icon: <CIcon icon={cilFile} customClassName="nav-icon" />,
+      }
     ]
   }
 
@@ -95,6 +107,12 @@ export default function fetchNavItems(t1) {
           { component: CNavItem, name: t('LABELS.create_user'), to: 'usermanagement/create-user', className: 'ms-4' },
         ],
       },
+{
+        component: CNavItem,
+        name: t("LABELS.credit_screen"),
+        to: '/credit_screen',
+        icon: <CIcon icon={cilFile} customClassName="nav-icon" />,
+      }
     ]
   }
 
@@ -110,6 +128,12 @@ export default function fetchNavItems(t1) {
           { component: CNavItem, name: t('LABELS.create_user'), to: 'usermanagement/create-user', className: 'ms-4' },
         ],
       },
+{
+        component: CNavItem,
+        name: t("LABELS.credit_screen"),
+        to: '/credit_screen',
+        icon: <CIcon icon={cilFile} customClassName="nav-icon" />,
+      }
     ]
   }
 
@@ -125,6 +149,12 @@ export default function fetchNavItems(t1) {
           { component: CNavItem, name: t('LABELS.create_user'), to: 'usermanagement/create-user', className: 'ms-4' },
         ],
       },
+{
+        component: CNavItem,
+        name: t("LABELS.credit_screen"),
+        to: '/credit_screen',
+        icon: <CIcon icon={cilFile} customClassName="nav-icon" />,
+      }
     ]         // all dairy pages were removed, so nothing to show here
   }
 

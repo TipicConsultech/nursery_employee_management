@@ -56,6 +56,10 @@ const Updatepassword  = React.lazy(() => import('./views/pages/Password/updatePa
 const JarMap          = React.lazy(() => import('./views/pages/map/Map'))   // (currently unused)
 const Plans           = React.lazy(() => import('./views/pages/plans/Plans'))
 
+/* ───── Employee Management Screens ───── */
+const CreditScreen        = React.lazy(() => import('./views/pages/employee_management_pages/CreditScreen'))
+
+
 /* ====================================================================== */
 
 export default function fetchRoutes () {
@@ -106,6 +110,7 @@ export default function fetchRoutes () {
 
       { path: 'plans',                      name: 'Plans',                      element: Plans },
       { path: '/company/companyReceipt',    name: 'Company Receipt',            element: CompanyReceipts },
+      { path: '/credit_screen',    name: 'Credit Screen',                element: CreditScreen },
     ]
   }
 
@@ -150,6 +155,8 @@ export default function fetchRoutes () {
 
       { path: '/usermanagement/create-user', name: 'Create User',              element: NewUsers },
       { path: 'usermanagement/all-users',    name: 'All Users',                element: AllUser },
+
+      { path: '/credit_screen',    name: 'Credit Screen',                element: CreditScreen },
     ]
   }
 
@@ -188,6 +195,7 @@ export default function fetchRoutes () {
 
       { path: '/usermanagement/create-user', name: 'Create User',             element: NewUsers },
       { path: 'usermanagement/all-users',    name: 'All Users',               element: AllUser },
+      { path: '/credit_screen',    name: 'Credit Screen',                element: CreditScreen },
     ]
   }
 
@@ -200,6 +208,7 @@ export default function fetchRoutes () {
 
       { path: '/resetPassword',          name: 'Update Password',element: Resetpassword },
       { path: '/updatepassword',         name: 'Reset Password', element: Updatepassword },
+      { path: '/credit_screen',    name: 'Credit Screen',                element: CreditScreen },
     ]
   }
 
@@ -211,6 +220,7 @@ export default function fetchRoutes () {
       { path: '/updatepassword',        name: 'Reset Password',  element: Updatepassword },
 
       { path: '/Reports/crateReport',   name: 'Credit Report',   element: CreditReport },
+      { path: '/credit_screen',    name: 'Credit Screen',                element: CreditScreen },
     ]
   }
 
@@ -219,6 +229,7 @@ export default function fetchRoutes () {
     routes = [
       { path: '/resetPassword',         name: 'Update Password', element: Resetpassword },
       { path: '/updatepassword',        name: 'Reset Password',  element: Updatepassword },
+      { path: '/credit_screen',    name: 'Credit Screen',                element: CreditScreen },
     ]
   }
 
